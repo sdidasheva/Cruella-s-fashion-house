@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;800&display=swap');
 
 :root {
-    --basic-color: white;
+    --basic-color: #d3d3d3;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
-    font-size: 16px;
     line-height: 24px;
     font-weight: normal;
     color: var(--basic-color);
@@ -39,32 +38,35 @@ img {
 /* Header */
 .header {
     width: 100%;
-    height: 60px;
+    height: fit-content;
     text-align: center;
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
-    padding-top: 30px;
+    line-height: 41px;
+    padding: 30px 0;
     box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Main */
 .container {
-    width: 80%;
+    width: 95%;
     box-sizing: border-box;
     margin: 0 auto;
 }
 
 .list-item {
-    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2);
     padding: 5px 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .list-item__title {
     text-align: center;
+    font-size: 35px;
 }
 
 .list-item__task {
@@ -75,28 +77,29 @@ img {
 
 .list-item__image-cruella {
     position: absolute;
-    width: 50px;
+    width: 80px;
     border-radius: 50%;
 }
 
 .list-item__description {
     position: relative;
-    margin-left: 70px;
+    margin-left: 90px;
     margin-bottom: 10px;
     padding: 10px;
     background-color: black;
+    color: var(--basic-color);
     width: 80%;
-    height: 50px;
+    height: fit-content;
     text-align: left;
     font: 400 .9em 'Open Sans', sans-serif;
     border: 1px solid black;
     border-radius: 10px;
+    font-size: 25px;
 }
 
 .list-item__description-content {
     padding: 0;
     margin: 0;
-    font-size: 18px;
 }
 
 .list-item__description::after {
@@ -125,7 +128,7 @@ img {
 
 .list-item__image {
     max-width: 100%;
-    height: 200px;
+    height: 300px;
 
 }
 
@@ -133,9 +136,10 @@ img {
     background-color: black;
     padding: 10px 20px;
     border-radius: 20px;
-    border: 3px dotted white;
-    font-size: 16px;
+    border: 3px dotted var(--basic-color);
+    font-size: 25px;
     outline: none;
+    margin: 10px 0;
 }
 
 /* Footer */
